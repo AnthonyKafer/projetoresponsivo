@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 /* Cores */
@@ -80,12 +81,13 @@ nav{
 }
 
 .banner{
-    background-image: url("../imgs/mainbanner.png");
-    background-size: cover;
-    background-position: center;
     padding: 10rem 0 ;
     width: 100%;
     text-align: center;
+    position: relative;
+    background-image: url("../imgs/mainbanner.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .banner h1,
@@ -127,8 +129,69 @@ nav{
 }
 
 .fas:hover{
-    font-size: 80px;
+    transform: scale(1.3);
     margin-bottom: 4rem;
     color: rgb(18, 66, 68);
     text-shadow: 5px 5px 0px var(--bg-color);
+}
+
+/* Fim da primeira seção */
+
+/* Início da segunda seção */
+section{
+    text-align: center;
+}
+
+.plan-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    height: 15rem;
+    color: var(--bright-white-color);
+}
+.plan{
+margin: 5rem 10rem;
+background-color: grey;
+width: 15%;
+height: 100%;
+position: relative;
+}
+
+.plan ul{
+    line-height: 3.32rem;
+}
+
+.plan-price{
+    background-color: var(--bg-color);
+    border-radius: 100%;
+    width: 40%;
+    height: 6rem;
+    position: absolute;
+    top: -30px;
+    left: 90px;
+    justify-content: center;
+    text-align: center;
+}
+
+.plan-name{
+    background-color: var(--secondary-color);
+}
+
+.select-plan-btn{
+    background-color: var(--green);
+    transition: all 0.5s ease-in-out;
+}
+
+.select-plan-btn:hover{
+    background-color:#013818;
+    color: var(--bright-white-color);
+    transform: scaleX(1.1);
+    font-size: initial;
+    border-radius: 0.5rem;
+}
+
+/* Seleçao sla man */
+
+.domain{
+    margin-top: 20rem;
 }
