@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+/* Cores */
+    :root{
+        --main-color: #1b1b1b;
+        --secondary-color: #061033;
+        --font-sizes: 50px;
+        --bg-color: #2b0b3d;
+        --white-color: #a1a1a1;
+        --bright-white-color: #e2e2e2;
+        --green: #007e34;
+    }
+/* Definições genéricas */
+
+h1, h2, h3 {
+    color: var(--main-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+.nav-container{
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    padding: 0 2rem ;
+}
+
+nav{
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+    margin-top: 15px;
+}
+
+.navbar-items{
+    position: absolute;
+    left: 450px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-items a{
+    color: var(--white-color);
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    margin: 0 5rem;
+}
+
+.navbar-items a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.default-btn{
+    background-color: var(--green);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.default-btn:hover{
+    background-color: #00bd4f;
+    box-shadow: 0px 0px 30px #0be465;
+}
+
+.banner{
+    padding: 10rem 0 ;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-image: url("../imgs/mainbanner.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.banner h1,
+.banner p{
+    color: var(--bright-white-color);
+    font-size: 20px;
+}
+
+.banner h1{
+    font-size: var(--font-sizes);
+}
+
+/* seção de serviços e fds*/
+
+.services-container{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.services-container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services-container li{
+    flex: 1 1 200px;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 20px;
+}
+
+.fas{
+    font-size: 70px;
+    margin-bottom: 4rem;
+    text-shadow: 3px 3px 1px var(--bg-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.fas:hover{
+    transform: scale(1.3);
+    margin-bottom: 4rem;
+    color: rgb(18, 66, 68);
+    text-shadow: 5px 5px 0px var(--bg-color);
+}
+
+/* Fim da primeira seção */
+
+/* Início da segunda seção */
+section{
+    text-align: center;
+}
+
+.plan-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+    height: 15rem;
+    color: var(--bright-white-color);
+}
+.plan{
+margin: 5rem 10rem;
+background-color: grey;
+width: 15%;
+height: 100%;
+position: relative;
+}
+
+.plan ul{
+    line-height: 3.32rem;
+}
+
+.plan-price{
+    background-color: var(--bg-color);
+    border-radius: 100%;
+    width: 40%;
+    height: 6rem;
+    position: absolute;
+    top: -30px;
+    left: 90px;
+    justify-content: center;
+    text-align: center;
+}
+
+.plan-name{
+    background-color: var(--secondary-color);
+}
+
+.select-plan-btn{
+    background-color: var(--green);
+    transition: all 0.5s ease-in-out;
+}
+
+.select-plan-btn:hover{
+    background-color:#013818;
+    color: var(--bright-white-color);
+    transform: scaleX(1.1);
+    font-size: initial;
+    border-radius: 0.5rem;
+}
+
+/* Seleçao sla man */
+
+.domain{
+    margin-top: 20rem;
+}
