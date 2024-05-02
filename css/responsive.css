@@ -1,0 +1,68 @@
+@media screen and (max-width:600px){
+.navbar-items{
+    position: absolute;
+    left: 50px;
+}
+
+.navbar-items a{
+    margin: 0 0.4rem;
+}
+
+.plan{
+    margin: 8rem 1rem;
+    width: 50%;
+    height: 111%;
+    }
+
+.contact-container h2{
+    width: 30%;
+    font-size: 30px;
+}
+
+.contact-container form>input, #mensage{
+    margin: 0.4rem auto;
+    width: 40%;
+}
+
+.domain p{
+    margin-top: 1rem;
+}
+
+.domain #domain{
+    width: 50%;    
+}
+
+.services-container ul{
+    flex-direction: column;
+}
+
+.services-container p{
+    width: 95%;
+}
+}
+
+/* Fim tela pequena (600px) */
+/* Tela média (992px) */
+
+@media screen and (max-width:992px){
+    .navbar-items{
+        position: absolute;
+        left: 150px;
+    }
+
+    .navbar-items a{
+        margin: auto 2rem;
+    }
+
+    .plan{
+        margin: 8rem 0.5rem;
+        width: 50%;
+        height: 111%;
+        }
+
+
+        .domain #domain{
+            width: 80%;    
+        }
+
+}

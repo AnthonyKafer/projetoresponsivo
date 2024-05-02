@@ -22,6 +22,11 @@ h1, h2, h3 {
     color: var(--main-color);
 }
 
+h3{
+    font-size: 25px;
+    font-style: bold;
+}
+
 p {
     color: var(--secondary-color);
 }
@@ -31,10 +36,13 @@ p {
     height: 100px;
     background-color: var(--bg-color);
     padding: 0 2rem ;
+    position: fixed;
+    z-index: 5;
 }
 
 nav{
     position: relative;
+    padding: 0.5rem;
 }
 
 .logo{
@@ -47,7 +55,6 @@ nav{
     left: 450px;
     height: 80px;
     line-height: 80px;
-    margin: 0;
     display: inline-block;
 }
 
@@ -73,6 +80,7 @@ nav{
     background-color: var(--green);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
+    transition: all 0.01s ease-in-out;
 }
 
 .default-btn:hover{
@@ -105,6 +113,17 @@ nav{
 .services-container{
     padding: 5rem 0;
     text-align: center;
+}
+
+.services-container p{
+    width: 60%;
+    text-align: center;
+    margin: 2rem auto;
+    transition: all 60s ease-in-out;
+}
+/* O tempo não funcionou, perguntar pro thalisin pq */
+.services-container p:hover{
+    text-decoration: underline;
 }
 
 .services-container ul{
@@ -142,6 +161,19 @@ section{
     text-align: center;
 }
 
+section h2{
+    font-size: 50px;
+    font-weight:700;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.39);
+}
+
+section> p{
+    font-size: 20px;
+    font-style: oblique;
+}
+
 .plan-container{
     display: flex;
     justify-content: center;
@@ -150,11 +182,14 @@ section{
     color: var(--bright-white-color);
 }
 .plan{
-margin: 5rem 10rem;
-background-color: grey;
+margin: 10rem 5rem;
+background-color: #dadada;
 width: 15%;
-height: 100%;
+height: 111%;
 position: relative;
+border-radius: 1rem 1rem 1rem 1rem;
+box-shadow: 4px 4px 2px rgba(85, 85, 85, 0.397);
+color: black;
 }
 
 .plan ul{
@@ -162,36 +197,148 @@ position: relative;
 }
 
 .plan-price{
-    background-color: var(--bg-color);
-    border-radius: 100%;
-    width: 40%;
-    height: 6rem;
+    width: 100%;
+    height: 3rem;
     position: absolute;
-    top: -30px;
-    left: 90px;
+    top: -50px;
     justify-content: center;
     text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-shadow: 2px 2px 0 var(--white-color);
 }
 
 .plan-name{
     background-color: var(--secondary-color);
+    border-radius: 1rem 1rem 0 0;
+    font-size: 30px;
+    color: var(--bright-white-color);
 }
 
 .select-plan-btn{
     background-color: var(--green);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius:  1rem;
+    color: var(--bright-white-color);
 }
 
 .select-plan-btn:hover{
     background-color:#013818;
     color: var(--bright-white-color);
     transform: scaleX(1.1);
-    font-size: initial;
     border-radius: 0.5rem;
+    font-size-adjust: none;
 }
+/* Esta porra nao funciona, n sei pq. perguntar pro thalisin
+.select-plan-btn span:hover{
+    color: red;
+    transition:none;
+} */
 
 /* Seleçao sla man */
 
+/* container */
 .domain{
-    margin-top: 20rem;
+    margin: 20rem auto 5rem auto;
+}
+
+/* butaum */
+#domain{
+    margin: 5rem 0 5rem auto;
+    width: 20%;
+    padding: 1rem;
+    border-style: none;
+    border-bottom: 1px solid black;
+}
+
+.procurar{
+    z-index: 2;
+    margin: -0.4rem;
+    padding: 1.1rem;
+    border-radius: 0rem 2rem 2rem 0;
+    background-color: #00bd4f;
+    border-style: none;
+    color:var(--main-color);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.procurar:hover{
+    background-color: #037e36;
+    box-shadow: 5px 1px 10px rgba(65, 185, 85, 0.678);
+    color: var(--bright-white-color);
+}
+
+/* contate-nos seção */
+
+.contact-container{
+    background-color:var(--main-color);
+    padding: 2rem 0 0rem 0;
+    margin-bottom: -2rem
+}
+
+.contact-container h2{
+    margin: 1rem auto 1rem auto;
+    color: var(--bright-white-color);
+    border-bottom: 1px solid white;
+    width: 20%;
+    font-size: 40px;
+}
+
+.contact-container p{
+    color: var(--bright-white-color);
+    margin-bottom: 2rem;
+    font-size: unset;
+}
+
+.contact-container form{
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-container form>input{
+    height: 2rem;
+    margin: 1rem auto;
+    width: 20%;
+    display: block;
+    background-color: transparent;
+    color: var(--bright-white-color);
+    border-style: none;
+    border-bottom: 1px solid var(--bright-white-color);
+}
+.contact-container form>textarea{
+    height: 5rem;
+    margin: 1rem auto;
+    width: 20%;
+    display: block;
+    background-color: transparent;
+    color: var(--bright-white-color);
+    border-style: none;
+    border-bottom: 1px solid var(--bright-white-color);
+}
+
+.contact-container form>button{
+    width: 15%;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 1rem;
+    border-style: none;
+    transition: all 0.2s ease-in-out;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+.contact-container form>button:hover{
+    background-color: #01923e;
+    box-shadow: 0px 0px 15px rgba(0, 255, 42, 0.315);
+    color: var(--bright-white-color);
+}
+
+footer{
+    color: var(--bright-white-color);
+    font-style: oblique;
+    margin-top: 2rem;
 }
